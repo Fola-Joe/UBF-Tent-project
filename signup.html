@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico">
+    <link rel="stylesheet" href="signup-styles.css">
     <title>Sign in | Sign up</title>
 </head>
+
 <body>
-    
+    <main>
+        <div class="header">
+            <img src="images/ubf_logo_text.jpg" alt="ubf logo" class="logo">
+            <h1>Sign In</h1>
+        </div>
+        <form action="" class="sign-in-form">
+            <input type="email" class="name-input" placeholder="Email" aria-label="email">
+            <input type="password" class="password-input" placeholder="Password" aria-label="password">
+
+            <button class="login-btn">Login</button>
+        </form>
+
+        <div class="links">
+            <p class="forgot-pword"><a href="#">Forgot password?</a></p>
+            <p class="signup-link">Have no account? <a href="#">Sign up</a></p>
+        </div>
+    </main>
+
+    <script src="signup.js"></script>
 </body>
 </html>

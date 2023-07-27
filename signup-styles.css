@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {box-sizing: border-box;}
+body {
+    background-color: hsl(223, 24%, 94%);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 30px -5px hsl(235, 17%, 13%);
+    padding: 2rem 1.5rem;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 0.75rem;
+}
+.logo {
+    width: 17rem;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: hsl(235, 17%, 13%);
+}
+input {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    max-width: 17.75rem;
+    width: 100%;
+    margin-right: 2rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    padding: 0.75rem 0 0.75rem 1rem;
+    border-radius: 2rem;
+    background-color: hsl(208, 56%, 46%);
+    color: hsl(0, 0%, 100%);
+}
+input:focus {outline: none;}
+::placeholder {
+    color: hsl(0, 0%, 100%);
+}
+.login-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 0.75rem 1.5rem;
+    width: 7rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: hsl(339, 98%, 46%);
+    color: white;
+    transition: all 0.5s;
+}
+.login-btn:hover {
+    cursor: pointer;
+    color: hsl(339, 98%, 46%);
+    background-color: hsl(223, 24%, 94%);
+}
+.forgot-pword {margin-bottom: 0.75rem;}
+.forgot-pword > a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(235, 17%, 13%);
+    transition: all 0.5s;
+}
+.forgot-pword > a:hover {
+    cursor: pointer;
+    color: hsl(339, 98%, 46%);
+}
+.signup-link {
+    font-family: 'Poppins', sans-serif;
+}
+.signup-link > a {
+    text-decoration: none;
+    color: hsl(339, 98%, 46%);
+    cursor: pointer;
+}
+.signup-link > a:hover {text-decoration: underline;}
