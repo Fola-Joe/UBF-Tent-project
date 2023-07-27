@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main>
+    <div class="main">
         <div class="header">
             <img src="images/ubf_logo_text.jpg" alt="ubf logo" class="logo">
             <h1>Sign In</h1>
@@ -24,9 +24,29 @@
 
         <div class="links">
             <p class="forgot-pword"><a href="#">Forgot password?</a></p>
-            <p class="signup-link">Have no account? <a href="#">Sign up</a></p>
+            <p class="signup-link">Have no account? <a id="sign-up-page">Sign up</a></p>
         </div>
-    </main>
+    </div>
+
+    <div class="main-2">
+        <div class="header-2">
+            <img src="images/ubf_logo_text.jpg" alt="ubf logo" class="logo-2">
+            <h1>Sign Up</h1>
+        </div>
+
+        <form action="" class="sign-in-form-2">
+            <input type="text" class="name-2" placeholder="Name" aria-label="name">
+            <input type="text" class="last-name-2" placeholder="Last Name" aria-label="last name">
+            <input type="email" class="name-input-2" placeholder="Email" aria-label="email">
+            <input type="password" class="password-input-2" placeholder="Password" aria-label="password">
+
+            <button class="login-btn-2">Sign up</button>
+        </form>
+
+        <div class="links-2">
+            <p class="signup-link-2">Have an account? <a id="sign-in-page">Sign in</a></p>
+        </div>
+    </div>
 
     <script src="signup.js"></script>
 </body>
