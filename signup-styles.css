@@ -82,20 +82,19 @@ input {
     font-family: 'Poppins', sans-serif;
     display: block;
     font-size: 0.9rem;
-    letter-spacing: 0.1rem;
     max-width: 17.75rem;
     width: 100%;
     margin-right: 2rem;
     margin-bottom: 1.2rem;
-    border: none;
+    border: 0.2rem solid hsl(208, 56%, 46%);
     padding: 0.75rem 0 0.75rem 1rem;
     border-radius: 2rem;
-    background-color: hsl(208, 56%, 46%);
-    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(208, 56%, 46%);
 }
 input:focus {outline: none;}
 ::placeholder {
-    color: hsl(0, 0%, 100%);
+    color: hsl(208, 56%, 46%);
 }
 .login-btn, .login-btn-2 {
     font-family: 'Poppins', sans-serif;
@@ -110,6 +109,7 @@ input:focus {outline: none;}
     color: white;
     transition: all 0.2s;
 }
+.login-btn-2{margin-bottom: 2rem;}
 .login-btn:hover, .login-btn-2:hover {
     cursor: pointer;
     color: hsl(339, 98%, 46%);
@@ -137,4 +137,14 @@ input:focus {outline: none;}
 }
 .signup-link > a:hover, .signup-link-2 > a:hover {text-decoration: underline;}
 
-/* sign up page */
+/* Error */
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    display: none;
+    text-align: left;
+    margin: -1rem 0 1rem 1rem;
+    color: hsl(0, 100%, 50%);
+}
