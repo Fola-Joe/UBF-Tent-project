@@ -10,6 +10,7 @@ const signInBtn = document.querySelector('.login-btn');
 const form1 = document.querySelector('.sign-in-form');
 const form2 = document.querySelector('.sign-in-form-2');
 
+//moving from sign in page to sign up page
 moveToSignInPage.addEventListener('click', () => {
     signUpPage.style.display = 'none'
     signInPage.style.display = 'block';
@@ -62,6 +63,20 @@ const passwordErrorMsg2 = document.querySelector('.password-error-2');
 
 const emailInput2 = document.querySelector('.email-input-2');
 const emailErrorMsg2 = document.querySelector('.email-error-2');
+
+//restricting user from inputting numeric characters for names
+firstnameInput.addEventListener('input', (e) => {
+    const input = e.target.value;
+    // Remove all non-letter characters
+    const lettersOnly = input.replace(/[^a-zA-Z\s]/g, '');
+    e.target.value = lettersOnly;
+})
+lastnameInput.addEventListener('input', (e) => {
+    const input = e.target.value;
+    // Remove all non-letter characters
+    const lettersOnly = input.replace(/[^a-zA-Z\s]/g, '');
+    e.target.value = lettersOnly;
+})
 
 form2.addEventListener('submit', (e) => {
     e.preventDefault();
