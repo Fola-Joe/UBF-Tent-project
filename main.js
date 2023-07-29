@@ -78,6 +78,7 @@ lastnameInput.addEventListener('input', (e) => {
     e.target.value = lettersOnly;
 })
 
+
 form2.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!firstnameInput.value) {
@@ -97,7 +98,7 @@ form2.addEventListener('submit', (e) => {
     if (!emailInput2.value) {
         emailErrorMsg2.style.display = 'block';
         emailInput2.style.borderColor = 'red';
-    }  else {
+    } else {
         emailErrorMsg2.style.display = 'none';
         emailInput2.style.borderColor = '';
     }
@@ -115,3 +116,13 @@ form2.addEventListener('submit', (e) => {
         passwordInput2.value = '';
     }
 })
+
+
+//to be removed soon
+const home = document.querySelector('.home');
+home.addEventListener('click', (e) => {
+    e.preventDefault();
+    const url = e.target.getAttribute('href');
+    window.location.href = url;
+})
+//
