@@ -1,0 +1,26 @@
+nav{margin: 1rem;}
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+.line {
+    width: 2.5rem;
+    height: 0.3rem;
+    border-radius: 2rem;
+    background-color: black;
+    transition: transform 0.3s ease;
+}
+
+
+.close{
+    transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+.gone {opacity: 0;}
+.close-2{transform: rotate(-45deg) translate(0.5rem, -0.5rem);}
