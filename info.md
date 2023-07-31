@@ -1,7 +1,7 @@
 ## Colours
-* background color: #edeff4 (grey);
-* text color, footer: #777(grey), white;
-* extra colors: #1b1c26 (black blue), #eb0254 (pink), #24252f, #337ab7 (blue)
+* background color: hsl(223, 24%, 94%) (grey);
+* text color, footer: #777(grey), hsl(0, 0%, 100%) white;
+* extra colors: #1b1c26 (black blue), hsl(339, 98%, 46%) (pink), #24252f, #337ab7 (blue)
 
 ## fonts
 [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk?query=space+)

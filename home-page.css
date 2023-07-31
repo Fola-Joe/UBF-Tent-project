@@ -1,8 +1,22 @@
-nav{margin: 1rem;}
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(223, 24%, 94%);
+}
+.wrapper {width: 100%;}
+
+/* nav */
+nav{
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: hsl(0, 0%, 100%);
+}
 .main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 1rem;
 }
 .hamburger-menu {
     display: flex;
@@ -18,9 +32,54 @@ nav{margin: 1rem;}
     transition: transform 0.3s ease;
 }
 
+.logo2 {
+    width: 4rem;
+}
+.aside-links {
+    position: absolute;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    right: 1000rem;
+    font-size: 1.25rem;
+    transition: all 0.5rem;
+    z-index: 1;
+}
+.aside-links::before {
+    content: "";
+    position: absolute;
+    border-right: 1rem solid white;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid white;
+    top: -2rem;
+    right: 0;
+}
+.aside-links li:nth-of-type(1) {
+    margin-bottom: 1.5rem;
+}
+.aside-links li:hover {
+    cursor: pointer;
+    color: hsl(339, 98%, 46%) ;
+    transition: all 0.5s;
+}
+.aside-links.active {
+    right: 1.5rem;
+    top: 7.5rem;
+}
+/* */
 
 .close{
     transform: rotate(45deg) translate(0.5rem, 0.5rem);
 }
 .gone {opacity: 0;}
 .close-2{transform: rotate(-45deg) translate(0.5rem, -0.5rem);}
+
+/**/
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
