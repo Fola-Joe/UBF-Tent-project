@@ -147,9 +147,10 @@ footer {
 .address{
     margin: 1.5rem 0 1.5rem 1rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.8rem;
 }
+.address p {line-height: 1.25;}
 .contact {
     margin-left: 1rem;
     display: flex;
@@ -166,7 +167,7 @@ footer {
 }
 
 /* Desktop view */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
     body {overflow-x: hidden;}
     nav {
         padding: 1rem 0;
@@ -211,7 +212,9 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding-bottom: 5rem;
+        gap: 1.5rem;
         margin-left: 3rem;
+        margin-right: 3rem;
     }
     .section-1, .section-2, .section-3 {
         margin: 0;
@@ -235,7 +238,8 @@ footer {
     .footer-logo, .contact, .address {
         margin-left: 2.5rem;
     }
-    .contact {margin-top: 1rem;}
+    .address p {line-height: 1.75;}
+    .contact {margin-top: 1.5rem;}
     .footer-logo {width: 5rem;}
     footer {padding: 3rem 0;}
     .footer-div {
@@ -244,4 +248,21 @@ footer {
         align-items: flex-start;
     }
     .numbers p {margin-bottom: 1rem;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    .information {
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-1, .section-2 {
+        margin-bottom: 1.5rem;
+    }
+    .logo2 {width: 20rem;}
+    .desktop-links {gap: 1rem;}
+    .desktop-links li {font-size: 0.9rem;}
+}
+
+@media screen and (min-width: 951px) and (max-width: 1030px) {
+    .logo2 {width: 25rem;}
+    .desktop-links li {font-size: 1rem;}
 }
