@@ -78,6 +78,27 @@ nav{
 .close-2{transform: rotate(-45deg) translate(0.5rem, -0.5rem);}
 
 /**/
+.aside-links li, .desktop-links li {
+    position: relative;
+    width: fit-content;
+}
+.aside-links li::after, .desktop-links li::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem; /* Distance of the line from the word's baseline */
+    left: 50%; /* Position at the center of the word */
+    width: 0;
+    height: 0.2rem;
+    background-color: hsl(339, 98%, 46%);
+    transition: all 0.5s; /* Animation duration and easing */
+}
+
+/* Animation when hovering */
+.aside-links li:hover::after, .desktop-links li:hover::after{
+    width: 100%; /* Expand the line to cover the word's width */
+    left: 0; /* Align the line with the left edge of the word */
+}
+
 
 main {width: 100vw;}
 .logo2 {
