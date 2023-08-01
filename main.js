@@ -47,6 +47,8 @@ form1.addEventListener('submit', (e) => {
     if (emailInput.value && passwordInput.value){
         emailInput.value = '';
         passwordInput.value = '';
+        
+        window.location.href = 'home-page.html';
     }
 })
 
@@ -114,6 +116,8 @@ form2.addEventListener('submit', (e) => {
         lastnameInput.value = '';
         emailInput2.value = '';
         passwordInput2.value = '';
+        
+        window.location.href = 'home-page.html';
     }
 })
 
