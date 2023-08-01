@@ -188,6 +188,7 @@ footer {
         margin-left: 2rem;
     }
     .desktop-links li {
+        font-size: 1.1rem;
         transition: all 0.5s;
         color: hsl(0, 0%, 47%);
     }
