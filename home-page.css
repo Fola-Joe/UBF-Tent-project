@@ -6,6 +6,9 @@ body {
 .wrapper {width: 100%;}
 
 /* nav */
+.desktop-links {
+    display: none;
+}
 nav{
     position: relative;
     width: 100%;
@@ -111,12 +114,12 @@ h2 {
 }
 .about-the-ministry {
     margin-top: 5rem;
-
     width: 100%;
     background-color: hsl(208, 56%, 46%);
     padding: 2rem 0;
 }
 h3 {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.2rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -160,4 +163,85 @@ footer {
 .num1:hover, .num2:hover, .num3:hover{
     cursor: pointer;
     color: hsl(339, 98%, 46%);
+}
+
+/* Desktop view */
+@media screen and (min-width: 1000px) {
+    body {overflow-x: hidden;}
+    nav {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hamburger-menu {display: none;}
+    .desktop-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-right: 2.5rem;
+        font-size: 1.25rem;
+    }
+    .logo2 {
+        width: 30rem;
+        margin-left: 2rem;
+    }
+    .desktop-links li {
+        transition: all 0.5s;
+        color: hsl(0, 0%, 47%);
+    }
+    .desktop-links li:hover {
+        cursor: pointer;
+        color: hsl(339, 98%, 46%);
+    }
+    .bg {
+        background-image: url(images/UBF_brothers1.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .about-the-ministry {margin-top: 0;}
+    h1 {
+        margin-left: 3rem;
+        margin-top: 0;
+        padding-top: 2rem;
+        color: hsl(235, 17%, 13%);
+    }
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 5rem;
+        margin-left: 3rem;
+    }
+    .section-1, .section-2, .section-3 {
+        margin: 0;
+        padding: 2rem;
+        font-size: 0.9rem;
+
+    }
+    .information p {line-height: 1.75;}
+    .about-the-ministry {
+        padding: 3rem 0;
+    }
+    h3 {
+        font-size: 2rem;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .about-the-ministry > p {
+        margin: 0 2.5rem;
+        line-height: 1.75;
+    }
+    .footer-logo, .contact, .address {
+        margin-left: 2.5rem;
+    }
+    .contact {margin-top: 1rem;}
+    .footer-logo {width: 5rem;}
+    footer {padding: 3rem 0;}
+    .footer-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+    }
+    .numbers p {margin-bottom: 1rem;}
 }
